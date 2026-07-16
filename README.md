@@ -2,6 +2,10 @@
 
 The flagship De-Omega-Point website: human-value centric intelligence, space technology, and Project Omega Horizon.
 
+## Live website
+
+[Open De-Omega-Point MainPageSite](https://de-omega-point.github.io/MainPageSite/)
+
 ## Development
 
 ```bash
