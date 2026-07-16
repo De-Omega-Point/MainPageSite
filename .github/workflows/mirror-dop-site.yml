@@ -1,0 +1,47 @@
+name: Mirror De-Omega-Point Flagship Site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/mirror-dop-site.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mirror-dop-site
+  cancel-in-progress: true
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Fetch canonical De-Omega-Point website
+        shell: bash
+        run: |
+          set -euo pipefail
+          git clone --depth 1 --branch gh-pages \
+            https://github.com/De-Omega-Point/DOP_Website.git /tmp/dop-site
+          rm -rf /tmp/dop-site/.git
+
+      - name: Publish to gh-pages
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git checkout --orphan gh-pages-publish
+          git rm -rf .
+          cp -a /tmp/dop-site/. .
+          touch .nojekyll
+          git add -A
+          git commit -m "Publish De-Omega-Point 2050 flagship website"
+          git push origin HEAD:gh-pages --force
