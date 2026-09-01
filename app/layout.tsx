@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "De-Omega-Point | Engineering Humanity Forward",
-  description: "Human-value centric intelligence and space technologies engineered for humanity's future.",
+  title: "De-Omega-Point Mission",
+  description: "Human-value-centric intelligence, emerging-technology research and responsible exploration for humanity's next horizon.",
   other: {
     "codex-preview": "development",
   },
