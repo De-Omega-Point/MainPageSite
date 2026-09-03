@@ -103,7 +103,7 @@ function HyperspaceField() {
 }
 
 function Logo2Wordmark({ className = "" }: { className?: string }) {
-  return <span className={`logo2-lockup ${className}`.trim()}><img src="/MainPageSite/logo2-wordmark.png" alt="DE-OMEGA-POINT"/></span>;
+  return <span className={`logo2-lockup ${className}`.trim()}><img src="/logo2-wordmark.png" alt="DE-OMEGA-POINT"/></span>;
 }
 
 export default function Home() {
@@ -125,8 +125,8 @@ export default function Home() {
         <p className="hero-copy">We develop human-value-centric intelligence, research emerging technologies and shape responsible exploration concepts that solve real-world problems — helping humanity move towards a sustainable future among the stars.</p>
         <div className="hero-actions"><a className="primary" href="#mission">Explore the mission <span>↓</span></a><a className="text-link" href="#pillars">View our systems <span>→</span></a></div>
         <div className="fleet-scene">
-          <img className="fleet-art" src="/MainPageSite/de-omega-canonical-flagship-space.png" alt="The canonical De-Omega-Point flagship travelling through deep space" />
-          <div className="fleet-tag"><img src="/MainPageSite/brand-logo.png" alt=""/><span>DE–OMEGA–POINT FLAGSHIP<small><span className="dop-id dop-id-small">D<img src="/MainPageSite/brand-logo.png" alt="Omega"/>P–01</span> · MISSION READY</small></span></div>
+          <img className="fleet-art" src="/de-omega-canonical-flagship-space.png" alt="The canonical De-Omega-Point flagship travelling through deep space" />
+          <div className="fleet-tag"><img src="/brand-logo.png" alt=""/><span>DE–OMEGA–POINT FLAGSHIP<small><span className="dop-id dop-id-small">D<img src="/brand-logo.png" alt="Omega"/>P–01</span> · MISSION READY</small></span></div>
         </div>
         <div className="telemetry" aria-label="Mission telemetry"><div><span>ORIGIN</span><b>34.9285° S</b><small>Adelaide, Australia</small></div><div><span>OPERATING MODE</span><b className="online">● ACTIVE</b><small>Human-value protocol</small></div><div><span>TRAJECTORY</span><b>EARTH → BEYOND</b><small>Forward, always.</small></div></div>
       </section>
@@ -143,12 +143,12 @@ export default function Home() {
       </section>
 
       <section className="flagship-showcase shell reveal" id="flagship">
-        <img src="/MainPageSite/de-omega-canonical-flagship-space.png" alt="Full view of the De-Omega-Point flagship with its Omega emblems and illuminated hangar" />
+        <img src="/de-omega-canonical-flagship-space.png" alt="Full view of the De-Omega-Point flagship with its Omega emblems and illuminated hangar" />
         <div className="holo-corners" aria-hidden="true"><i/><i/><i/><i/></div>
         <div className="target-reticle" aria-hidden="true"><span/><span/></div>
         <div className="flagship-panel">
           <p className="flagship-kicker">02 — THE FLAGSHIP</p>
-          <h2><span className="dop-id">D<img src="/MainPageSite/brand-logo.png" alt="Omega"/>P–01</span><br/><strong>Forward, always.</strong></h2>
+          <h2><span className="dop-id">D<img src="/brand-logo.png" alt="Omega"/>P–01</span><br/><strong>Forward, always.</strong></h2>
           <p>Our command vessel embodies the De‑Omega‑Point mission: advanced human-centred systems, planetary stewardship and a responsible trajectory towards the stars.</p>
           <div className="flagship-status"><span><b>CLASS</b>OMEGA FLAGSHIP</span><span><b>STATUS</b>MISSION READY</span><span><b>ORIGIN</b>AUSTRALIA · EARTH</span></div>
         </div>
@@ -157,7 +157,7 @@ export default function Home() {
       <section className="manifesto shell reveal" id="mission">
         <div className="mission-mark">
           <div className="section-index">01 — THE MISSION</div>
-          <img className="mission-ship" src="/MainPageSite/de-omega-point-ship.png" alt="A De-Omega-Point fleet vessel" />
+          <img className="mission-ship" src="/de-omega-point-ship.png" alt="A De-Omega-Point fleet vessel" />
         </div>
         <div><h2>Technology should not merely advance.<br/><strong>It should elevate.</strong></h2><p>De-Omega-Point exists at the convergence of artificial intelligence, human-centred innovation and a long-term vision for humanity. We research how emerging technologies can improve life on Earth and inform responsible exploration beyond it — with ethics embedded from the beginning, not added afterwards.</p></div>
       </section>
@@ -169,7 +169,7 @@ export default function Home() {
         <article><span>04</span><div className="glyph">∞</div><h3>Regenerative<br/>prosperity</h3><p>We design systems that compound knowledge, access and opportunity without extracting the future to fund the present.</p></article>
       </section>
 
-      <section className="signal shell reveal" id="signal"><div className="signal-orbit"><i/><i/><img src="/MainPageSite/brand-logo.png" alt=""/></div><p>THE SIGNAL IS CLEAR</p><h2>Build what humanity<br/><strong>deserves next.</strong></h2><a className="primary" href="mailto:mission@deomegapoint.com">Connect with De-Omega-Point <span>↗</span></a></section>
+      <section className="signal shell reveal" id="signal"><div className="signal-orbit"><i/><i/><img src="/brand-logo.png" alt=""/></div><p>THE SIGNAL IS CLEAR</p><h2>Build what humanity<br/><strong>deserves next.</strong></h2><a className="primary" href="mailto:mission@deomegapoint.com">Connect with De-Omega-Point <span>↗</span></a></section>
       <footer className="shell"><span>© 2026 DE–OMEGA–POINT</span><span>HUMAN VALUE · FORWARD, ALWAYS.</span><span>ADELAIDE, AUSTRALIA 🇦🇺</span></footer>
     </main>
   );
